@@ -20,8 +20,7 @@ internal class Program
             Console.WriteLine("5. stop faceit driver");
             Console.WriteLine("0. exit");
             Console.Write("number: ");
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Black;
+            
 
             var choice = Console.ReadLine();
 

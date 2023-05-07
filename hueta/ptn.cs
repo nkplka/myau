@@ -4,8 +4,7 @@ public class ptn
 {
     public static void Ptn()
     {
-        Console.BackgroundColor = ConsoleColor.White;
-        Console.ForegroundColor = ConsoleColor.Black;
+        
         Console.Clear();
         Console.WriteLine(
             ".,:;;;;;;;;;;;;;;;::::::::,::::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:::::,,,,,,::,:::::: ");
