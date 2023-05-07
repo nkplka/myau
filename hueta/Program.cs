@@ -17,8 +17,11 @@ internal class Program
             Console.WriteLine("2. discord webhook");
             Console.WriteLine("3. task manager");
             Console.WriteLine("4. kdmapper");
+            Console.WriteLine("5. stop faceit driver");
             Console.WriteLine("0. exit");
             Console.Write("number: ");
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
 
             var choice = Console.ReadLine();
 
@@ -38,6 +41,14 @@ internal class Program
                 
                 case "4":
                     kdmapper.startdriver();
+                    break;
+                
+                case "5":
+                    faceit.stop();
+                    break;
+                
+                case "777":
+                    ptn.Ptn();
                     break;
 
                 case "0":

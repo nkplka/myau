@@ -28,6 +28,7 @@ public class Minecraft
                     Console.WriteLine("Players Online: " + result.players.online);
                     Console.WriteLine("Version: " + result.version);
                     Console.ReadKey();
+                    Program.Main();
                 }
                 else
                 {
