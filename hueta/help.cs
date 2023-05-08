@@ -1,5 +1,4 @@
-﻿
-namespace hueta;
+﻿namespace hueta;
 
 public class Help
 {

@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+
 namespace hueta;
 
 public class Taskmgr
@@ -7,12 +8,10 @@ public class Taskmgr
     {
         static void Tasks()
         {
-            Process[] processes = Process.GetProcesses();
+            var processes = Process.GetProcesses();
 
-            foreach (Process process in processes)
-            {
+            foreach (var process in processes)
                 Console.WriteLine("Process Name: {0} | Process ID: {1}", process.ProcessName, process.Id);
-            }
 
             Console.ReadLine();
         }
@@ -21,14 +20,12 @@ public class Taskmgr
         {
             Tasks();
             Console.Write("Enter process ID: ");
-            string input = Console.ReadLine();
+            var input = Console.ReadLine();
 
-            if (int.TryParse(input, out int id))
-            {
+            if (int.TryParse(input, out var id))
                 try
                 {
-                    
-                    Process process = Process.GetProcessById(id);
+                    var process = Process.GetProcessById(id);
                     process.Kill();
                     Console.WriteLine($"Process {id} was successfully killed.");
                 }
@@ -40,11 +37,8 @@ public class Taskmgr
                 {
                     Console.WriteLine($"Error closing process {id}: {ex.Message}");
                 }
-            }
             else
-            {
                 Console.WriteLine("Invalid input. Please enter a valid process ID.");
-            }
         }
 
 
@@ -78,5 +72,4 @@ public class Taskmgr
             }
         }
     }
-
 }

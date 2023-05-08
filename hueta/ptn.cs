@@ -4,7 +4,6 @@ public class ptn
 {
     public static void Ptn()
     {
-        
         Console.Clear();
         Console.WriteLine(
             ".,:;;;;;;;;;;;;;;;::::::::,::::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:::::,,,,,,::,:::::: ");
@@ -136,6 +135,5 @@ public class ptn
             "HHHHHHHHHHHHHHBHBBHHBBBB;             ;HHBBAAMMMB,.....  ....    .;MMMMBBBBBBBBBBBBBBBBBBM#BBBBBBBHBBHHHHHHHHH");
         Console.ReadKey();
         Console.Clear();
-        
     }
 }

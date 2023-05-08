@@ -46,7 +46,7 @@ internal class Program
                 case "test":
                     tests.test();
                     break;
-                
+
                 case "h":
                     Help.Menu();
                     break;
