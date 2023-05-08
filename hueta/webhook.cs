@@ -37,13 +37,13 @@ public static class Webhook
                         await SendWebhook(url, message);
                         Console.WriteLine("successfully.");
                         Console.ReadKey();
-                        Program.Main();
+                        
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine($"errrr sending message: {ex.Message}");
                         Console.ReadKey();
-                        Program.Main();
+                        
                     }
 
                     break;

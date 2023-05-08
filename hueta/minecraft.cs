@@ -42,7 +42,7 @@ public class Minecraft
                 Console.WriteLine("errr: " + ex.Message);
                 Console.WriteLine("press enter to continue.");
                 Console.ReadKey();
-                Console.Clear();
+                Program.Main();
             }
         }
     }
