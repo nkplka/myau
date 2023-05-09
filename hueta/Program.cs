@@ -14,6 +14,7 @@ internal class Program
             Console.WriteLine("3. task manager");
             Console.WriteLine("4. kdmapper");
             Console.WriteLine("5. stop faceit");
+            Console.WriteLine("6. chatgpt");
             Console.WriteLine("h. help menu");
             Console.WriteLine("0. exit");
             Console.WriteLine("number: ");
@@ -41,6 +42,10 @@ internal class Program
 
                 case "5":
                     faceit.stop();
+                    break;
+                
+                case "6":
+                    chatgpt.chat();
                     break;
 
                 case "test":
